@@ -23,7 +23,7 @@
 
 FROM node:10.9-stretch
 
-LABEL maintainer "Paul DeCarlo <toolboc@gmail.com>"
+LABEL maintainer "Ian Steiger <iksteiger@gmail.com>"
 
 RUN apt update && apt install -y \
     libgtk-3-0 \
@@ -35,6 +35,7 @@ RUN apt update && apt install -y \
     libxtst-dev \
     libxss1 \
     git \
+    firefox \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
